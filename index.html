@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi PoC</title>
+  <meta name="description" content="Prueba de concepto de un sitio web desplegado en la nube.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <strong>Mi PoC</strong>
+    <nav>
+      <a href="#features">Características</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Una idea, en línea en minutos</h1>
+      <p>Prueba de concepto de un sitio estático desplegado en la nube.</p>
+      <a class="btn" href="#contacto">Empezar</a>
+    </section>
+
+    <section id="features" class="features">
+      <article>
+        <h2>Rápido</h2>
+        <p>Sin build ni dependencias: HTML, CSS y JS puros.</p>
+      </article>
+      <article>
+        <h2>Económico</h2>
+        <p>Se aloja gratis en Vercel o Netlify.</p>
+      </article>
+      <article>
+        <h2>Automático</h2>
+        <p>Cada <code>git push</code> publica una nueva versión.</p>
+      </article>
+    </section>
+
+    <section id="contacto" class="contact">
+      <h2>Contacto</h2>
+      <form id="form">
+        <input type="email" name="email" placeholder="tu@correo.com" required>
+        <textarea name="mensaje" placeholder="Mensaje" rows="4" required></textarea>
+        <button class="btn" type="submit">Enviar</button>
+        <p id="status" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>© 2026 Mi PoC</footer>
+  <script src="script.js"></script>
+</body>
+</html>
